@@ -29,7 +29,7 @@ const CopyBtn = ({ copyToClipboard, text }: Props) => {
       </button>
       {showPopup && (
         <div className='absolute left-0 w-[200px] top-full mt-2 py-2 px-4 bg-transparent rounded shadow-sm text-white opacity-60 font-extralight border border-[#6466E9]'>
-          Copied to the clipboard
+          Copied to clipboard
         </div>
       )}
     </div>
