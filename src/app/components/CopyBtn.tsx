@@ -28,8 +28,8 @@ const CopyBtn = ({ copyToClipboard, text }: Props) => {
         <GoCopy className='w-[25px] h-[25px]' />
       </button>
       {showPopup && (
-        <div className='absolute left-0 w-[200px] top-full mt-2 py-2 px-4 bg-transparent rounded shadow-sm text-white opacity-60 font-extralight border border-[#6466E9]'>
-          Copied to clipboard
+        <div className='flex w-full min-w-[174px] items-center justify-center absolute left-0  top-full mt-2 py-2 px-2 bg-transparent rounded shadow-sm text-white opacity-60 font-extralight border border-[#6466E9]'>
+          <span>Copied to clipboard</span>
         </div>
       )}
     </div>
