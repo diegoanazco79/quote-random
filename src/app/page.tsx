@@ -11,7 +11,7 @@ export default function Home () {
   const { currentQuote, loadingQuote, getQuote, copyToClipboard } = useQuote();
 
   return (
-    <main className='flex-col min-h-screen bg-[#111629] flex items-center justify-center'>
+    <main className='flex-col min-h-screen bg-[#111629] flex items-center justify-center px-10'>
       <div className='p-10 border-transparent bg-[#20293A] rounded-xl max-w-screen-sm w-full'>
         {loadingQuote
           ? (
@@ -33,7 +33,7 @@ export default function Home () {
                   />
                 ))}
               </div>
-              <h1 className='text-2xl text-center text-[#97a3b6] mt-4'>
+              <h1 className='text-xl md:text-2xl text-center text-[#97a3b6] mt-4'>
                 "{currentQuote?.content}"
               </h1>
             </>
