@@ -6,5 +6,5 @@ export interface Quote {
   dateModified: string;
   length: number;
   tags: string[];
-  content: string;
+  quote: string;
 }

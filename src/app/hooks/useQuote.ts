@@ -13,7 +13,7 @@ const useQuote = () => {
   const getQuote = async () => {
     try {
       setLoadingQuote(true);
-      const response = await fetch('https://api.quotable.io/random');
+      const response = await fetch('https://quotes-daily-api.vercel.app/random-quote');
       const data = await response.json();
       setCurrentQuote(data);
     } catch (error) {

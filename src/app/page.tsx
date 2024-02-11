@@ -33,8 +33,8 @@ export default function Home () {
                   />
                 ))}
               </div>
-              <h1 className='text-xl md:text-2xl text-center text-[#97a3b6] mt-4'>
-                "{currentQuote?.content}"
+              <h1 className='text-lg md:text-xl text-center text-[#97a3b6] mt-4'>
+                "{currentQuote?.quote}"
               </h1>
             </>
           )}
@@ -46,7 +46,7 @@ export default function Home () {
         >
           <IoRefreshOutline className='w-[25px] h-[25px]' />
         </button>
-        <CopyBtn copyToClipboard={copyToClipboard} text={`"${currentQuote?.content}" - ${currentQuote?.author}`} />
+        <CopyBtn copyToClipboard={copyToClipboard} text={`"${currentQuote?.quote}" - ${currentQuote?.author}`} />
       </div>
     </main>
   );

@@ -6,5 +6,5 @@ export const initialQuote = {
   dateModified: '',
   length: 0,
   tags: [],
-  content: ''
+  quote: ''
 };
